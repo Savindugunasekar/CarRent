@@ -1,0 +1,39 @@
+.carcategory{
+    padding-top: 100px;
+}
+
+
+
+
+.carlist{
+    
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 100px;
+}
+
+
+.buttons button{
+    background-color: #FE8400;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.buttons button:active{
+    background-color: #c46602;
+}
+
+
+
+

@@ -1,0 +1,45 @@
+services:
+  mongo: 
+    image: mongo:latest
+    container_name: mongo_container
+    volumes:
+      - mongo_data:/data/db
+
+    ports:
+      - "27017:27017"
+
+  server:
+    build: ./CarRent-backend
+    container_name: server_container
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+    volumes:
+      - ./CarRent-backend:/app
+      - ./CarRent-backend/node_modules:/app/node_modules
+
+    environment:
+      - DB_URL=mongodb+srv://savindugunasekara:carrental123@cluster1.3u5dsgv.mongodb.net/?retryWrites=true&w=majority
+
+
+  client:
+    build: ./CarRent-frontend
+    container_name: client_container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    stdin_open: true
+    tty: true
+
+    volumes:
+      - ./CarRent-frontend:/app
+      - ./CarRent-frontend/node_modules:/app/node_modules
+
+volumes:
+  mongo_data:
+
+
+    
+

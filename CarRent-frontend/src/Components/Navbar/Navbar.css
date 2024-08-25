@@ -1,0 +1,22 @@
+.nav-link {
+    color: black;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #fe800f;
+}
+.nav-link:active {
+    color: #fe800f;
+}
+
+#navbar li,button{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#navbar button:hover{
+    color: white;
+}
+

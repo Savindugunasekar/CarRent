@@ -1,0 +1,29 @@
+
+#blackportion{
+    height: 440px;
+    background-color: #141414;
+    text-align: center;
+    
+  }
+  
+  #serviceinfo{
+    color: #f5f5f5;
+    font-family: "poppins";
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #servicecontainer{
+   
+    
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+    }
+  
+    #servicebox{
+      padding: 30px 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }

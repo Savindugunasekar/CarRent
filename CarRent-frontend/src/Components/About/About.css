@@ -1,0 +1,26 @@
+#aboutdesc{
+    font-family: "poppins";
+    font-size: 100;
+    color: #575757;
+    font-weight: 300;
+  }
+
+  #aboutlink{
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 20px;
+    color: #FE8400;
+    font-weight: 400;
+  }
+
+  .heading {
+    text-align: center;
+    padding-top: 70px;
+    
+    font-size: 200;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #FE8400;
+    text-decoration-thickness: 2px;
+   
+  }
