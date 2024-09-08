@@ -9,8 +9,7 @@ services:
       - "27017:27017"
 
   server:
-    build: ./CarRent-backend
-    container_name: server_container
+    image: savindugunasekara/carrentserver:latest
     ports:
       - "4000:4000"
     depends_on:
@@ -24,8 +23,7 @@ services:
 
 
   client:
-    build: ./CarRent-frontend
-    container_name: client_container
+    image: savindugunasekara/carrentclient:latest
     ports:
       - "3000:3000"
     depends_on:
